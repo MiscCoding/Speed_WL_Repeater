@@ -1,0 +1,2188 @@
+SCW32_VERSION 7 4.05.00
+SNR 1 6
+BER 3 .03
+SRCETEMP 3 290
+DEMOD 2 FM
+$IP 0 
+	SYSTEMP 3 290
+	RXLOSS 1 0
+	BSYSTEMP 1 0
+	BRXLOSS 1 0
+$END 0 
+IDISP 13 NF;Gain;OIP3;
+CURTAB 1 0
+REFBER 1 0
+BW 3 .03
+AFE 7 18.5418
+FREQ 3 824
+ANTGAIN 2 10
+$PAGE 10 1.8_LTE_DL
+	$IP 0 
+		SYSTEMP 3 290
+		RXLOSS 1 0
+		BSYSTEMP 1 0
+		BRXLOSS 1 0
+	$END 0 
+	IDISP 19 NF;Gain;OIP3;IP1dB;
+	ODISP 12 NF+;IP3+;Po;
+	GEN 1 0
+	PROBE 2 20
+	USEPROJIN 1 0
+	USEPROJOUT 1 0
+	SIGPWR 3 -52
+	$CMP 6 Filter
+		ILINK 2 -1
+		DESC 14 Qorvo
+TQQ6103
+		DWFLAGS 1 0
+		NFEG 1 1
+		$LIST 0 
+			$P 4 Gain
+				VAL 2 -4
+				BLS 1 4
+			$END 0 
+			$P 4 IIP2
+				VAL 2 34
+				BLS 1 0
+			$END 0 
+			$P 4 IIP3
+				VAL 2 24
+				BLS 1 0
+			$END 0 
+			$P 5 IP1dB
+				VAL 1 1
+				BLS 1 0
+			$END 0 
+			$P 2 NF
+				VAL 1 4
+				BLS 1 4
+			$END 0 
+			$P 4 OIP2
+				VAL 2 30
+				BLS 1 0
+			$END 0 
+			$P 4 OIP3
+				VAL 2 20
+				BLS 1 0
+			$END 0 
+			$P 5 OP1dB
+				VAL 2 10
+				BLS 1 0
+			$END 0 
+			$P 2 Te
+				VAL 7 438.447
+				BLS 1 0
+			$END 0 
+		BCOMPRESS 1 0
+		$END 0 
+	$END 0 
+	$CMP 4 Gain
+		ILINK 2 -1
+		DESC 26 LNA
+TQP3M9037
+3.3V, 44mA
+		DWFLAGS 1 0
+		$LIST 0 
+			$P 4 Gain
+				VAL 2 20
+				BLS 1 4
+			$END 0 
+			$P 4 IIP2
+				VAL 2 10
+				BLS 1 0
+			$END 0 
+			$P 4 IIP3
+				VAL 2 12
+				BLS 1 0
+			$END 0 
+			$P 5 IP1dB
+				VAL 2 20
+				BLS 1 0
+			$END 0 
+			$P 2 NF
+				VAL 3 .65
+				BLS 1 4
+			$END 0 
+			$P 4 OIP2
+				VAL 2 30
+				BLS 1 4
+			$END 0 
+			$P 4 OIP3
+				VAL 2 32
+				BLS 1 4
+			$END 0 
+			$P 5 OP1dB
+				VAL 2 39
+				BLS 1 4
+			$END 0 
+			$P 2 Te
+				VAL 7 46.8201
+				BLS 1 0
+			$END 0 
+		BCOMPRESS 1 0
+		$END 0 
+	$END 0 
+	$CMP 6 Filter
+		ILINK 2 -1
+		DESC 29 Sawnics
+SAW
+SF182001-
+s20
+		DWFLAGS 1 0
+		NFEG 1 1
+		$LIST 0 
+			$P 4 Gain
+				VAL 4 -2.5
+				BLS 1 4
+			$END 0 
+			$P 4 IIP2
+				VAL 4 32.5
+				BLS 1 0
+			$END 0 
+			$P 4 IIP3
+				VAL 4 22.5
+				BLS 1 0
+			$END 0 
+			$P 5 IP1dB
+				VAL 1 1
+				BLS 1 0
+			$END 0 
+			$P 2 NF
+				VAL 3 2.5
+				BLS 1 4
+			$END 0 
+			$P 4 OIP2
+				VAL 2 30
+				BLS 1 0
+			$END 0 
+			$P 4 OIP3
+				VAL 2 20
+				BLS 1 0
+			$END 0 
+			$P 5 OP1dB
+				VAL 2 10
+				BLS 1 0
+			$END 0 
+			$P 2 Te
+				VAL 7 225.701
+				BLS 1 0
+			$END 0 
+		BCOMPRESS 1 0
+		$END 0 
+	$END 0 
+	$CMP 4 Attn
+		ILINK 2 -1
+		DESC 23 PE4312
+IL
+3.3V, 200uA
+		DWFLAGS 1 0
+		NFEG 1 1
+		$LIST 0 
+			$P 4 Gain
+				VAL 2 -2
+				BLS 1 4
+			$END 0 
+			$P 4 IIP2
+				VAL 2 32
+				BLS 1 0
+			$END 0 
+			$P 4 IIP3
+				VAL 2 22
+				BLS 1 0
+			$END 0 
+			$P 5 IP1dB
+				VAL 1 1
+				BLS 1 0
+			$END 0 
+			$P 2 NF
+				VAL 1 2
+				BLS 1 0
+			$END 0 
+			$P 4 OIP2
+				VAL 2 30
+				BLS 1 0
+			$END 0 
+			$P 4 OIP3
+				VAL 2 20
+				BLS 1 0
+			$END 0 
+			$P 5 OP1dB
+				VAL 2 10
+				BLS 1 0
+			$END 0 
+			$P 2 Te
+				VAL 7 169.619
+				BLS 1 0
+			$END 0 
+		BCOMPRESS 1 0
+		$END 0 
+	$END 0 
+	$CMP 4 Attn
+		ILINK 2 -1
+		DESC 11 PE4312
+AGC
+		DWFLAGS 1 0
+		NFEG 1 1
+		$LIST 0 
+			$P 4 Gain
+				VAL 1 0
+				BLS 1 4
+			$END 0 
+			$P 4 IIP2
+				VAL 2 30
+				BLS 1 0
+			$END 0 
+			$P 4 IIP3
+				VAL 2 20
+				BLS 1 0
+			$END 0 
+			$P 5 IP1dB
+				VAL 1 1
+				BLS 1 0
+			$END 0 
+			$P 2 NF
+				VAL 1 0
+				BLS 1 0
+			$END 0 
+			$P 4 OIP2
+				VAL 2 30
+				BLS 1 0
+			$END 0 
+			$P 4 OIP3
+				VAL 2 20
+				BLS 1 0
+			$END 0 
+			$P 5 OP1dB
+				VAL 2 10
+				BLS 1 0
+			$END 0 
+			$P 2 Te
+				VAL 1 0
+				BLS 1 0
+			$END 0 
+		BCOMPRESS 1 0
+		$END 0 
+	$END 0 
+	$CMP 4 Gain
+		ILINK 2 -1
+		DESC 21 Amp
+BGS6
+3.3V, 26mA
+		DWFLAGS 1 0
+		$LIST 0 
+			$P 4 Gain
+				VAL 2 18
+				BLS 1 4
+			$END 0 
+			$P 4 IIP2
+				VAL 2 12
+				BLS 1 0
+			$END 0 
+			$P 4 IIP3
+				VAL 1 8
+				BLS 1 0
+			$END 0 
+			$P 5 IP1dB
+				VAL 2 14
+				BLS 1 0
+			$END 0 
+			$P 2 NF
+				VAL 3 3.1
+				BLS 1 4
+			$END 0 
+			$P 4 OIP2
+				VAL 2 30
+				BLS 1 4
+			$END 0 
+			$P 4 OIP3
+				VAL 2 26
+				BLS 1 4
+			$END 0 
+			$P 5 OP1dB
+				VAL 2 31
+				BLS 1 4
+			$END 0 
+			$P 2 Te
+				VAL 7 302.104
+				BLS 1 0
+			$END 0 
+		BCOMPRESS 1 0
+		$END 0 
+	$END 0 
+	$CMP 5 Mixer
+		ILINK 2 -1
+		DESC 34 Mixer
+BM851
+120MHz
+3.3V, 44.5mA
+		DWFLAGS 1 0
+		$LIST 0 
+			$P 4 Gain
+				VAL 2 -8
+				BLS 1 4
+			$END 0 
+			$P 4 IIP2
+				VAL 2 38
+				BLS 1 0
+			$END 0 
+			$P 4 IIP3
+				VAL 4 38.3
+				BLS 1 4
+			$END 0 
+			$P 5 IP1dB
+				VAL 4 18.8
+				BLS 1 0
+			$END 0 
+			$P 2 NF
+				VAL 1 8
+				BLS 1 4
+			$END 0 
+			$P 4 OIP2
+				VAL 2 30
+				BLS 1 4
+			$END 0 
+			$P 4 OIP3
+				VAL 4 30.3
+				BLS 1 0
+			$END 0 
+			$P 5 OP1dB
+				VAL 3 9.8
+				BLS 1 4
+			$END 0 
+			$P 2 Te
+				VAL 9 1.53978e3
+				BLS 1 0
+			$END 0 
+		BCOMPRESS 1 0
+		$END 0 
+	$END 0 
+	$CMP 6 Filter
+		ILINK 2 -1
+		DESC 14 LPF
+LC Filter
+		DWFLAGS 1 0
+		NFEG 1 1
+		$LIST 0 
+			$P 4 Gain
+				VAL 2 -1
+				BLS 1 4
+			$END 0 
+			$P 4 IIP2
+				VAL 2 31
+				BLS 1 0
+			$END 0 
+			$P 4 IIP3
+				VAL 2 21
+				BLS 1 0
+			$END 0 
+			$P 5 IP1dB
+				VAL 1 1
+				BLS 1 0
+			$END 0 
+			$P 2 NF
+				VAL 1 1
+				BLS 1 0
+			$END 0 
+			$P 4 OIP2
+				VAL 2 30
+				BLS 1 0
+			$END 0 
+			$P 4 OIP3
+				VAL 2 20
+				BLS 1 0
+			$END 0 
+			$P 5 OP1dB
+				VAL 2 10
+				BLS 1 0
+			$END 0 
+			$P 2 Te
+				VAL 7 75.0884
+				BLS 1 0
+			$END 0 
+		BCOMPRESS 1 0
+		$END 0 
+	$END 0 
+	$CMP 4 Gain
+		ILINK 2 -1
+		DESC 21 Amp
+BGS5
+3.0V, 52mA
+		DWFLAGS 1 0
+		$LIST 0 
+			$P 4 Gain
+				VAL 2 17
+				BLS 1 4
+			$END 0 
+			$P 4 IIP2
+				VAL 2 13
+				BLS 1 0
+			$END 0 
+			$P 4 IIP3
+				VAL 4 15.5
+				BLS 1 0
+			$END 0 
+			$P 5 IP1dB
+				VAL 4 15.5
+				BLS 1 4
+			$END 0 
+			$P 2 NF
+				VAL 3 2.2
+				BLS 1 4
+			$END 0 
+			$P 4 OIP2
+				VAL 2 30
+				BLS 1 4
+			$END 0 
+			$P 4 OIP3
+				VAL 4 32.5
+				BLS 1 4
+			$END 0 
+			$P 5 OP1dB
+				VAL 4 31.5
+				BLS 1 0
+			$END 0 
+			$P 2 Te
+				VAL 6 191.28
+				BLS 1 0
+			$END 0 
+		BCOMPRESS 1 0
+		$END 0 
+	$END 0 
+	$CMP 6 Filter
+		ILINK 2 -1
+		DESC 39 EFTech
+IF Saw filter
+ER120A195
+215MH
+		DWFLAGS 1 0
+		NFEG 1 1
+		$LIST 0 
+			$P 4 Gain
+				VAL 3 -22
+				BLS 1 4
+			$END 0 
+			$P 4 IIP2
+				VAL 2 52
+				BLS 1 0
+			$END 0 
+			$P 4 IIP3
+				VAL 2 42
+				BLS 1 0
+			$END 0 
+			$P 5 IP1dB
+				VAL 1 1
+				BLS 1 0
+			$END 0 
+			$P 2 NF
+				VAL 2 22
+				BLS 1 0
+			$END 0 
+			$P 4 OIP2
+				VAL 2 30
+				BLS 1 0
+			$END 0 
+			$P 4 OIP3
+				VAL 2 20
+				BLS 1 0
+			$END 0 
+			$P 5 OP1dB
+				VAL 2 10
+				BLS 1 0
+			$END 0 
+			$P 2 Te
+				VAL 9 45.6719e3
+				BLS 1 0
+			$END 0 
+		BCOMPRESS 1 0
+		$END 0 
+	$END 0 
+	$CMP 4 Gain
+		ILINK 2 -1
+		DESC 21 Amp
+BGS3
+3.0V, 55mA
+		DWFLAGS 1 0
+		$LIST 0 
+			$P 4 Gain
+				VAL 2 27
+				BLS 1 4
+			$END 0 
+			$P 4 IIP2
+				VAL 1 3
+				BLS 1 0
+			$END 0 
+			$P 4 IIP3
+				VAL 3 3.5
+				BLS 1 0
+			$END 0 
+			$P 5 IP1dB
+				VAL 4 16.7
+				BLS 1 4
+			$END 0 
+			$P 2 NF
+				VAL 3 1.7
+				BLS 1 4
+			$END 0 
+			$P 4 OIP2
+				VAL 2 30
+				BLS 1 4
+			$END 0 
+			$P 4 OIP3
+				VAL 4 30.5
+				BLS 1 4
+			$END 0 
+			$P 5 OP1dB
+				VAL 4 42.7
+				BLS 1 0
+			$END 0 
+			$P 2 Te
+				VAL 7 138.941
+				BLS 1 0
+			$END 0 
+		BCOMPRESS 1 0
+		$END 0 
+	$END 0 
+	$CMP 5 Mixer
+		ILINK 2 -1
+		DESC 32 Mixer
+BM851
+120MHz
+3.3V, 44.5
+		DWFLAGS 1 0
+		$LIST 0 
+			$P 4 Gain
+				VAL 2 -8
+				BLS 1 4
+			$END 0 
+			$P 4 IIP2
+				VAL 2 38
+				BLS 1 0
+			$END 0 
+			$P 4 IIP3
+				VAL 4 38.3
+				BLS 1 0
+			$END 0 
+			$P 5 IP1dB
+				VAL 4 18.8
+				BLS 1 4
+			$END 0 
+			$P 2 NF
+				VAL 1 8
+				BLS 1 4
+			$END 0 
+			$P 4 OIP2
+				VAL 2 30
+				BLS 1 4
+			$END 0 
+			$P 4 OIP3
+				VAL 4 30.3
+				BLS 1 4
+			$END 0 
+			$P 5 OP1dB
+				VAL 3 9.8
+				BLS 1 0
+			$END 0 
+			$P 2 Te
+				VAL 9 1.53978e3
+				BLS 1 0
+			$END 0 
+		BCOMPRESS 1 0
+		$END 0 
+	$END 0 
+	$CMP 6 Filter
+		ILINK 2 -1
+		DESC 20 SAW
+SF182001-
+s20
+		DWFLAGS 1 0
+		NFEG 1 1
+		$LIST 0 
+			$P 4 Gain
+				VAL 4 -2.5
+				BLS 1 4
+			$END 0 
+			$P 4 IIP2
+				VAL 4 32.5
+				BLS 1 0
+			$END 0 
+			$P 4 IIP3
+				VAL 4 22.5
+				BLS 1 0
+			$END 0 
+			$P 5 IP1dB
+				VAL 1 1
+				BLS 1 0
+			$END 0 
+			$P 2 NF
+				VAL 3 2.5
+				BLS 1 4
+			$END 0 
+			$P 4 OIP2
+				VAL 2 30
+				BLS 1 0
+			$END 0 
+			$P 4 OIP3
+				VAL 2 20
+				BLS 1 0
+			$END 0 
+			$P 5 OP1dB
+				VAL 2 10
+				BLS 1 0
+			$END 0 
+			$P 2 Te
+				VAL 7 225.701
+				BLS 1 0
+			$END 0 
+		BCOMPRESS 1 0
+		$END 0 
+	$END 0 
+	$CMP 7 Generic
+		ILINK 2 -1
+		DESC 6 PI-Pad
+		DWFLAGS 1 0
+		$LIST 0 
+			$P 4 Gain
+				VAL 2 -1
+				BLS 1 4
+			$END 0 
+			$P 4 IIP2
+				VAL 2 31
+				BLS 1 0
+			$END 0 
+			$P 4 IIP3
+				VAL 1 1
+				BLS 1 0
+			$END 0 
+			$P 5 IP1dB
+				VAL 1 1
+				BLS 1 0
+			$END 0 
+			$P 2 NF
+				VAL 1 1
+				BLS 1 4
+			$END 0 
+			$P 4 OIP2
+				VAL 2 30
+				BLS 1 4
+			$END 0 
+			$P 4 OIP3
+				VAL 1 0
+				BLS 1 4
+			$END 0 
+			$P 5 OP1dB
+				VAL 2 10
+				BLS 1 0
+			$END 0 
+			$P 2 Te
+				VAL 7 75.0884
+				BLS 1 0
+			$END 0 
+		BCOMPRESS 1 0
+		$END 0 
+	$END 0 
+	$CMP 4 Gain
+		ILINK 2 -1
+		DESC 21 Amp
+BGS4
+3.3V, 26mA
+		DWFLAGS 1 0
+		$LIST 0 
+			$P 4 Gain
+				VAL 2 14
+				BLS 1 4
+			$END 0 
+			$P 4 IIP2
+				VAL 2 16
+				BLS 1 0
+			$END 0 
+			$P 4 IIP3
+				VAL 4 16.5
+				BLS 1 0
+			$END 0 
+			$P 5 IP1dB
+				VAL 2 20
+				BLS 1 4
+			$END 0 
+			$P 2 NF
+				VAL 3 2.1
+				BLS 1 4
+			$END 0 
+			$P 4 OIP2
+				VAL 2 30
+				BLS 1 4
+			$END 0 
+			$P 4 OIP3
+				VAL 4 30.5
+				BLS 1 4
+			$END 0 
+			$P 5 OP1dB
+				VAL 2 33
+				BLS 1 0
+			$END 0 
+			$P 2 Te
+				VAL 7 180.325
+				BLS 1 0
+			$END 0 
+		BCOMPRESS 1 0
+		$END 0 
+	$END 0 
+	$CMP 4 Attn
+		ILINK 2 -1
+		DESC 23 PE4312
+IL
+3.3V, 200uA
+		DWFLAGS 1 0
+		NFEG 1 1
+		$LIST 0 
+			$P 4 Gain
+				VAL 2 -2
+				BLS 1 4
+			$END 0 
+			$P 4 IIP2
+				VAL 2 32
+				BLS 1 0
+			$END 0 
+			$P 4 IIP3
+				VAL 2 22
+				BLS 1 0
+			$END 0 
+			$P 5 IP1dB
+				VAL 1 1
+				BLS 1 0
+			$END 0 
+			$P 2 NF
+				VAL 1 2
+				BLS 1 0
+			$END 0 
+			$P 4 OIP2
+				VAL 2 30
+				BLS 1 0
+			$END 0 
+			$P 4 OIP3
+				VAL 2 20
+				BLS 1 0
+			$END 0 
+			$P 5 OP1dB
+				VAL 2 10
+				BLS 1 0
+			$END 0 
+			$P 2 Te
+				VAL 7 169.619
+				BLS 1 0
+			$END 0 
+		BCOMPRESS 1 0
+		$END 0 
+	$END 0 
+	$CMP 4 Attn
+		ILINK 2 -1
+		DESC 24 PE4312
+ISO
+3.3V, 200uA
+		DWFLAGS 1 0
+		NFEG 1 1
+		$LIST 0 
+			$P 4 Gain
+				VAL 5 -21.5
+				BLS 1 4
+			$END 0 
+			$P 4 IIP2
+				VAL 4 51.5
+				BLS 1 0
+			$END 0 
+			$P 4 IIP3
+				VAL 4 41.5
+				BLS 1 0
+			$END 0 
+			$P 5 IP1dB
+				VAL 1 1
+				BLS 1 0
+			$END 0 
+			$P 2 NF
+				VAL 4 21.5
+				BLS 1 0
+			$END 0 
+			$P 4 OIP2
+				VAL 2 30
+				BLS 1 0
+			$END 0 
+			$P 4 OIP3
+				VAL 2 20
+				BLS 1 0
+			$END 0 
+			$P 5 OP1dB
+				VAL 2 10
+				BLS 1 0
+			$END 0 
+			$P 2 Te
+				VAL 9 40.6736e3
+				BLS 1 0
+			$END 0 
+		BCOMPRESS 1 0
+		$END 0 
+	$END 0 
+	$CMP 4 Gain
+		ILINK 2 -1
+		DESC 21 Amp
+BGS3
+3.3V, 55mA
+		DWFLAGS 1 0
+		$LIST 0 
+			$P 4 Gain
+				VAL 4 21.5
+				BLS 1 4
+			$END 0 
+			$P 4 IIP2
+				VAL 3 8.5
+				BLS 1 0
+			$END 0 
+			$P 4 IIP3
+				VAL 1 9
+				BLS 1 0
+			$END 0 
+			$P 5 IP1dB
+				VAL 4 16.9
+				BLS 1 4
+			$END 0 
+			$P 2 NF
+				VAL 3 1.8
+				BLS 1 4
+			$END 0 
+			$P 4 OIP2
+				VAL 2 30
+				BLS 1 4
+			$END 0 
+			$P 4 OIP3
+				VAL 4 30.5
+				BLS 1 4
+			$END 0 
+			$P 5 OP1dB
+				VAL 4 37.4
+				BLS 1 0
+			$END 0 
+			$P 2 Te
+				VAL 7 148.933
+				BLS 1 0
+			$END 0 
+		BCOMPRESS 1 0
+		$END 0 
+	$END 0 
+	$CMP 6 Filter
+		ILINK 2 -1
+		DESC 20 SAW
+SF182001-
+s20
+		DWFLAGS 1 0
+		NFEG 1 1
+		$LIST 0 
+			$P 4 Gain
+				VAL 4 -2.5
+				BLS 1 4
+			$END 0 
+			$P 4 IIP2
+				VAL 4 32.5
+				BLS 1 0
+			$END 0 
+			$P 4 IIP3
+				VAL 4 22.5
+				BLS 1 0
+			$END 0 
+			$P 5 IP1dB
+				VAL 1 1
+				BLS 1 0
+			$END 0 
+			$P 2 NF
+				VAL 3 2.5
+				BLS 1 0
+			$END 0 
+			$P 4 OIP2
+				VAL 2 30
+				BLS 1 0
+			$END 0 
+			$P 4 OIP3
+				VAL 2 20
+				BLS 1 0
+			$END 0 
+			$P 5 OP1dB
+				VAL 2 10
+				BLS 1 0
+			$END 0 
+			$P 2 Te
+				VAL 7 225.701
+				BLS 1 0
+			$END 0 
+		BCOMPRESS 1 0
+		$END 0 
+	$END 0 
+	$CMP 4 Gain
+		ILINK 2 -1
+		DESC 22 HPA
+BMT321
+5V, 355mA
+		DWFLAGS 1 0
+		$LIST 0 
+			$P 4 Gain
+				VAL 4 27.5
+				BLS 1 4
+			$END 0 
+			$P 4 IIP2
+				VAL 3 2.5
+				BLS 1 0
+			$END 0 
+			$P 4 IIP3
+				VAL 4 22.5
+				BLS 1 0
+			$END 0 
+			$P 5 IP1dB
+				VAL 4 32.4
+				BLS 1 4
+			$END 0 
+			$P 2 NF
+				VAL 3 5.3
+				BLS 1 4
+			$END 0 
+			$P 4 OIP2
+				VAL 2 30
+				BLS 1 4
+			$END 0 
+			$P 4 OIP3
+				VAL 2 50
+				BLS 1 4
+			$END 0 
+			$P 5 OP1dB
+				VAL 4 58.9
+				BLS 1 0
+			$END 0 
+			$P 2 Te
+				VAL 7 692.648
+				BLS 1 0
+			$END 0 
+		BCOMPRESS 1 0
+		$END 0 
+	$END 0 
+	$CMP 6 Filter
+		ILINK 2 -1
+		DESC 14 Qorvo
+TQQ6103
+		DWFLAGS 1 0
+		NFEG 1 1
+		$LIST 0 
+			$P 4 Gain
+				VAL 2 -4
+				BLS 1 4
+			$END 0 
+			$P 4 IIP2
+				VAL 2 34
+				BLS 1 0
+			$END 0 
+			$P 4 IIP3
+				VAL 2 24
+				BLS 1 0
+			$END 0 
+			$P 5 IP1dB
+				VAL 1 1
+				BLS 1 0
+			$END 0 
+			$P 2 NF
+				VAL 1 4
+				BLS 1 4
+			$END 0 
+			$P 4 OIP2
+				VAL 2 30
+				BLS 1 0
+			$END 0 
+			$P 4 OIP3
+				VAL 2 20
+				BLS 1 0
+			$END 0 
+			$P 5 OP1dB
+				VAL 2 10
+				BLS 1 0
+			$END 0 
+			$P 2 Te
+				VAL 7 438.447
+				BLS 1 0
+			$END 0 
+		BCOMPRESS 1 0
+		$END 0 
+	$END 0 
+	$BREP 5 32787
+	$EREP 0 
+	$BREP 5 32787
+	$EREP 0 
+$END 10 1.8_LTE_DL
+$PAGE 10 1.8_LTE_UL
+	TITLE 10 1.8_LTE_UL
+	$IP 0 
+		SYSTEMP 3 290
+		RXLOSS 1 0
+		BSYSTEMP 1 0
+		BRXLOSS 1 0
+	$END 0 
+	IDISP 19 NF;Gain;OIP3;IP1dB;
+	ODISP 12 IP3+;NF+;Po;
+	GEN 1 0
+	PROBE 2 24
+	USEPROJIN 1 0
+	USEPROJOUT 1 0
+	SIGPWR 3 -46
+	$CMP 6 Filter
+		ILINK 2 -1
+		DESC 14 Qorvo
+TQQ6103
+		DWFLAGS 1 0
+		NFEG 1 1
+		$LIST 0 
+			$P 4 Gain
+				VAL 2 -4
+				BLS 1 4
+			$END 0 
+			$P 4 IIP2
+				VAL 2 34
+				BLS 1 0
+			$END 0 
+			$P 4 IIP3
+				VAL 2 24
+				BLS 1 0
+			$END 0 
+			$P 5 IP1dB
+				VAL 1 1
+				BLS 1 0
+			$END 0 
+			$P 2 NF
+				VAL 1 4
+				BLS 1 4
+			$END 0 
+			$P 4 OIP2
+				VAL 2 30
+				BLS 1 0
+			$END 0 
+			$P 4 OIP3
+				VAL 2 20
+				BLS 1 0
+			$END 0 
+			$P 5 OP1dB
+				VAL 2 10
+				BLS 1 0
+			$END 0 
+			$P 2 Te
+				VAL 7 438.447
+				BLS 1 0
+			$END 0 
+		BCOMPRESS 1 0
+		$END 0 
+	$END 0 
+	$CMP 4 Gain
+		ILINK 2 -1
+		DESC 26 LNA
+TQP3M9037
+3.3V, 44mA
+		DWFLAGS 1 0
+		$LIST 0 
+			$P 4 Gain
+				VAL 2 20
+				BLS 1 4
+			$END 0 
+			$P 4 IIP2
+				VAL 2 10
+				BLS 1 0
+			$END 0 
+			$P 4 IIP3
+				VAL 2 12
+				BLS 1 0
+			$END 0 
+			$P 5 IP1dB
+				VAL 2 20
+				BLS 1 0
+			$END 0 
+			$P 2 NF
+				VAL 3 .65
+				BLS 1 4
+			$END 0 
+			$P 4 OIP2
+				VAL 2 30
+				BLS 1 4
+			$END 0 
+			$P 4 OIP3
+				VAL 2 32
+				BLS 1 4
+			$END 0 
+			$P 5 OP1dB
+				VAL 2 39
+				BLS 1 4
+			$END 0 
+			$P 2 Te
+				VAL 7 46.8201
+				BLS 1 0
+			$END 0 
+		BCOMPRESS 1 0
+		$END 0 
+	$END 0 
+	$CMP 6 Filter
+		ILINK 2 -1
+		DESC 25 Sawnics
+SF-172501-
+S20
+		DWFLAGS 1 0
+		NFEG 1 1
+		$LIST 0 
+			$P 4 Gain
+				VAL 4 -2.5
+				BLS 1 4
+			$END 0 
+			$P 4 IIP2
+				VAL 4 32.5
+				BLS 1 0
+			$END 0 
+			$P 4 IIP3
+				VAL 4 22.5
+				BLS 1 0
+			$END 0 
+			$P 5 IP1dB
+				VAL 1 1
+				BLS 1 0
+			$END 0 
+			$P 2 NF
+				VAL 3 2.5
+				BLS 1 0
+			$END 0 
+			$P 4 OIP2
+				VAL 2 30
+				BLS 1 0
+			$END 0 
+			$P 4 OIP3
+				VAL 2 20
+				BLS 1 0
+			$END 0 
+			$P 5 OP1dB
+				VAL 2 10
+				BLS 1 0
+			$END 0 
+			$P 2 Te
+				VAL 7 225.701
+				BLS 1 0
+			$END 0 
+		BCOMPRESS 1 0
+		$END 0 
+	$END 0 
+	$CMP 4 Attn
+		ILINK 2 -1
+		DESC 29 ALC 
+Peregrine
+2.3V, 200uA
+		DWFLAGS 1 0
+		NFEG 1 1
+		$LIST 0 
+			$P 4 Gain
+				VAL 2 -2
+				BLS 1 4
+			$END 0 
+			$P 4 IIP2
+				VAL 2 32
+				BLS 1 0
+			$END 0 
+			$P 4 IIP3
+				VAL 2 22
+				BLS 1 0
+			$END 0 
+			$P 5 IP1dB
+				VAL 1 1
+				BLS 1 0
+			$END 0 
+			$P 2 NF
+				VAL 1 2
+				BLS 1 0
+			$END 0 
+			$P 4 OIP2
+				VAL 2 30
+				BLS 1 0
+			$END 0 
+			$P 4 OIP3
+				VAL 2 20
+				BLS 1 0
+			$END 0 
+			$P 5 OP1dB
+				VAL 2 10
+				BLS 1 0
+			$END 0 
+			$P 2 Te
+				VAL 7 169.619
+				BLS 1 0
+			$END 0 
+		BCOMPRESS 1 0
+		$END 0 
+	$END 0 
+	$CMP 4 Attn
+		ILINK 2 -1
+		DESC 10 ALC
+Value
+		DWFLAGS 1 0
+		NFEG 1 1
+		$LIST 0 
+			$P 4 Gain
+				VAL 1 0
+				BLS 1 4
+			$END 0 
+			$P 4 IIP2
+				VAL 2 30
+				BLS 1 0
+			$END 0 
+			$P 4 IIP3
+				VAL 2 20
+				BLS 1 0
+			$END 0 
+			$P 5 IP1dB
+				VAL 1 1
+				BLS 1 0
+			$END 0 
+			$P 2 NF
+				VAL 1 0
+				BLS 1 0
+			$END 0 
+			$P 4 OIP2
+				VAL 2 30
+				BLS 1 0
+			$END 0 
+			$P 4 OIP3
+				VAL 2 20
+				BLS 1 0
+			$END 0 
+			$P 5 OP1dB
+				VAL 2 10
+				BLS 1 0
+			$END 0 
+			$P 2 Te
+				VAL 1 0
+				BLS 1 0
+			$END 0 
+		BCOMPRESS 1 0
+		$END 0 
+	$END 0 
+	$CMP 4 Gain
+		ILINK 2 -1
+		DESC 21 Amp
+BGS5
+3.3V, 66mA
+		DWFLAGS 1 0
+		$LIST 0 
+			$P 4 Gain
+				VAL 2 15
+				BLS 1 4
+			$END 0 
+			$P 4 IIP2
+				VAL 2 15
+				BLS 1 0
+			$END 0 
+			$P 4 IIP3
+				VAL 4 15.5
+				BLS 1 0
+			$END 0 
+			$P 5 IP1dB
+				VAL 4 17.1
+				BLS 1 4
+			$END 0 
+			$P 2 NF
+				VAL 3 2.7
+				BLS 1 4
+			$END 0 
+			$P 4 OIP2
+				VAL 2 30
+				BLS 1 4
+			$END 0 
+			$P 4 OIP3
+				VAL 4 30.5
+				BLS 1 4
+			$END 0 
+			$P 5 OP1dB
+				VAL 4 31.1
+				BLS 1 0
+			$END 0 
+			$P 2 Te
+				VAL 7 250.005
+				BLS 1 0
+			$END 0 
+		BCOMPRESS 1 0
+		$END 0 
+	$END 0 
+	$CMP 5 Mixer
+		ILINK 2 -1
+		DESC 37 Mixer
+BM851
+215MHz 
+3.3V, 44.5mA
+
+		DWFLAGS 1 0
+		$LIST 0 
+			$P 4 Gain
+				VAL 2 -8
+				BLS 1 4
+			$END 0 
+			$P 4 IIP2
+				VAL 2 38
+				BLS 1 0
+			$END 0 
+			$P 4 IIP3
+				VAL 4 38.3
+				BLS 1 0
+			$END 0 
+			$P 5 IP1dB
+				VAL 4 18.8
+				BLS 1 4
+			$END 0 
+			$P 2 NF
+				VAL 1 8
+				BLS 1 4
+			$END 0 
+			$P 4 OIP2
+				VAL 2 30
+				BLS 1 4
+			$END 0 
+			$P 4 OIP3
+				VAL 4 30.3
+				BLS 1 4
+			$END 0 
+			$P 5 OP1dB
+				VAL 3 9.8
+				BLS 1 0
+			$END 0 
+			$P 2 Te
+				VAL 9 1.53978e3
+				BLS 1 0
+			$END 0 
+		BCOMPRESS 1 0
+		$END 0 
+	$END 0 
+	$CMP 6 Filter
+		ILINK 2 -1
+		DESC 14 LPF
+LC filter
+		DWFLAGS 1 0
+		NFEG 1 1
+		$LIST 0 
+			$P 4 Gain
+				VAL 2 -1
+				BLS 1 4
+			$END 0 
+			$P 4 IIP2
+				VAL 2 31
+				BLS 1 0
+			$END 0 
+			$P 4 IIP3
+				VAL 2 21
+				BLS 1 0
+			$END 0 
+			$P 5 IP1dB
+				VAL 1 1
+				BLS 1 0
+			$END 0 
+			$P 2 NF
+				VAL 1 1
+				BLS 1 0
+			$END 0 
+			$P 4 OIP2
+				VAL 2 30
+				BLS 1 0
+			$END 0 
+			$P 4 OIP3
+				VAL 2 20
+				BLS 1 0
+			$END 0 
+			$P 5 OP1dB
+				VAL 2 10
+				BLS 1 0
+			$END 0 
+			$P 2 Te
+				VAL 7 75.0884
+				BLS 1 0
+			$END 0 
+		BCOMPRESS 1 0
+		$END 0 
+	$END 0 
+	$CMP 4 Gain
+		ILINK 2 -1
+		DESC 21 Amp
+BGS4
+3.3V, 26mA
+		DWFLAGS 1 0
+		$LIST 0 
+			$P 4 Gain
+				VAL 2 21
+				BLS 1 4
+			$END 0 
+			$P 4 IIP2
+				VAL 1 9
+				BLS 1 0
+			$END 0 
+			$P 4 IIP3
+				VAL 1 9
+				BLS 1 0
+			$END 0 
+			$P 5 IP1dB
+				VAL 4 20.4
+				BLS 1 4
+			$END 0 
+			$P 2 NF
+				VAL 3 2.7
+				BLS 1 4
+			$END 0 
+			$P 4 OIP2
+				VAL 2 30
+				BLS 1 4
+			$END 0 
+			$P 4 OIP3
+				VAL 2 30
+				BLS 1 4
+			$END 0 
+			$P 5 OP1dB
+				VAL 4 40.4
+				BLS 1 0
+			$END 0 
+			$P 2 Te
+				VAL 7 250.005
+				BLS 1 0
+			$END 0 
+		BCOMPRESS 1 0
+		$END 0 
+	$END 0 
+	$CMP 6 Filter
+		ILINK 2 -1
+		DESC 33 EF tech
+IF Saw filter
+ER155A195
+		DWFLAGS 1 0
+		NFEG 1 1
+		$LIST 0 
+			$P 4 Gain
+				VAL 3 -22
+				BLS 1 4
+			$END 0 
+			$P 4 IIP2
+				VAL 2 52
+				BLS 1 0
+			$END 0 
+			$P 4 IIP3
+				VAL 2 42
+				BLS 1 0
+			$END 0 
+			$P 5 IP1dB
+				VAL 1 1
+				BLS 1 0
+			$END 0 
+			$P 2 NF
+				VAL 2 22
+				BLS 1 0
+			$END 0 
+			$P 4 OIP2
+				VAL 2 30
+				BLS 1 0
+			$END 0 
+			$P 4 OIP3
+				VAL 2 20
+				BLS 1 0
+			$END 0 
+			$P 5 OP1dB
+				VAL 2 10
+				BLS 1 0
+			$END 0 
+			$P 2 Te
+				VAL 9 45.6719e3
+				BLS 1 0
+			$END 0 
+		BCOMPRESS 1 0
+		$END 0 
+	$END 0 
+	$CMP 4 Gain
+		ILINK 2 -1
+		DESC 21 Amp
+BGS3
+3.3V, 55mA
+		DWFLAGS 1 0
+		$LIST 0 
+			$P 4 Gain
+				VAL 2 27
+				BLS 1 4
+			$END 0 
+			$P 4 IIP2
+				VAL 1 3
+				BLS 1 0
+			$END 0 
+			$P 4 IIP3
+				VAL 3 3.5
+				BLS 1 0
+			$END 0 
+			$P 5 IP1dB
+				VAL 4 16.7
+				BLS 1 4
+			$END 0 
+			$P 2 NF
+				VAL 3 1.7
+				BLS 1 4
+			$END 0 
+			$P 4 OIP2
+				VAL 2 30
+				BLS 1 4
+			$END 0 
+			$P 4 OIP3
+				VAL 4 30.5
+				BLS 1 4
+			$END 0 
+			$P 5 OP1dB
+				VAL 4 42.7
+				BLS 1 0
+			$END 0 
+			$P 2 Te
+				VAL 7 138.941
+				BLS 1 0
+			$END 0 
+		BCOMPRESS 1 0
+		$END 0 
+	$END 0 
+	$CMP 5 Mixer
+		ILINK 2 -1
+		DESC 26 Mixer
+BM851
+3.3V, 44.5mA
+		DWFLAGS 1 0
+		$LIST 0 
+			$P 4 Gain
+				VAL 2 -8
+				BLS 1 4
+			$END 0 
+			$P 4 IIP2
+				VAL 2 38
+				BLS 1 0
+			$END 0 
+			$P 4 IIP3
+				VAL 4 38.3
+				BLS 1 0
+			$END 0 
+			$P 5 IP1dB
+				VAL 4 18.8
+				BLS 1 4
+			$END 0 
+			$P 2 NF
+				VAL 1 8
+				BLS 1 4
+			$END 0 
+			$P 4 OIP2
+				VAL 2 30
+				BLS 1 4
+			$END 0 
+			$P 4 OIP3
+				VAL 4 30.3
+				BLS 1 4
+			$END 0 
+			$P 5 OP1dB
+				VAL 3 9.8
+				BLS 1 0
+			$END 0 
+			$P 2 Te
+				VAL 9 1.53978e3
+				BLS 1 0
+			$END 0 
+		BCOMPRESS 1 0
+		$END 0 
+	$END 0 
+	$CMP 6 Filter
+		ILINK 2 -1
+		DESC 25 Sawnics
+SF-172501-
+S20
+		DWFLAGS 1 0
+		NFEG 1 1
+		$LIST 0 
+			$P 4 Gain
+				VAL 4 -2.5
+				BLS 1 4
+			$END 0 
+			$P 4 IIP2
+				VAL 4 32.5
+				BLS 1 0
+			$END 0 
+			$P 4 IIP3
+				VAL 4 22.5
+				BLS 1 0
+			$END 0 
+			$P 5 IP1dB
+				VAL 1 1
+				BLS 1 0
+			$END 0 
+			$P 2 NF
+				VAL 3 2.5
+				BLS 1 0
+			$END 0 
+			$P 4 OIP2
+				VAL 2 30
+				BLS 1 0
+			$END 0 
+			$P 4 OIP3
+				VAL 2 20
+				BLS 1 0
+			$END 0 
+			$P 5 OP1dB
+				VAL 2 10
+				BLS 1 0
+			$END 0 
+			$P 2 Te
+				VAL 7 225.701
+				BLS 1 0
+			$END 0 
+		BCOMPRESS 1 0
+		$END 0 
+	$END 0 
+	$CMP 6 Filter
+		ILINK 2 -1
+		DESC 27 Sawnics
+SF-172501-
+S20
+
+		DWFLAGS 1 0
+		NFEG 1 1
+		$LIST 0 
+			$P 4 Gain
+				VAL 4 -2.5
+				BLS 1 4
+			$END 0 
+			$P 4 IIP2
+				VAL 4 32.5
+				BLS 1 0
+			$END 0 
+			$P 4 IIP3
+				VAL 4 22.5
+				BLS 1 0
+			$END 0 
+			$P 5 IP1dB
+				VAL 1 1
+				BLS 1 0
+			$END 0 
+			$P 2 NF
+				VAL 3 2.5
+				BLS 1 0
+			$END 0 
+			$P 4 OIP2
+				VAL 2 30
+				BLS 1 0
+			$END 0 
+			$P 4 OIP3
+				VAL 2 20
+				BLS 1 0
+			$END 0 
+			$P 5 OP1dB
+				VAL 2 10
+				BLS 1 0
+			$END 0 
+			$P 2 Te
+				VAL 7 225.701
+				BLS 1 0
+			$END 0 
+		BCOMPRESS 1 0
+		$END 0 
+	$END 0 
+	$CMP 7 Generic
+		ILINK 2 -1
+		DESC 6 Pi-Pad
+		DWFLAGS 1 0
+		$LIST 0 
+			$P 4 Gain
+				VAL 2 -2
+				BLS 1 4
+			$END 0 
+			$P 4 IIP2
+				VAL 2 32
+				BLS 1 0
+			$END 0 
+			$P 4 IIP3
+				VAL 1 2
+				BLS 1 0
+			$END 0 
+			$P 5 IP1dB
+				VAL 1 1
+				BLS 1 0
+			$END 0 
+			$P 2 NF
+				VAL 1 2
+				BLS 1 4
+			$END 0 
+			$P 4 OIP2
+				VAL 2 30
+				BLS 1 4
+			$END 0 
+			$P 4 OIP3
+				VAL 1 0
+				BLS 1 4
+			$END 0 
+			$P 5 OP1dB
+				VAL 2 10
+				BLS 1 0
+			$END 0 
+			$P 2 Te
+				VAL 7 169.619
+				BLS 1 0
+			$END 0 
+		BCOMPRESS 1 0
+		$END 0 
+	$END 0 
+	$CMP 4 Gain
+		ILINK 2 -1
+		DESC 22 Amp
+BNT01
+3.3V, 47mA
+		DWFLAGS 1 0
+		$LIST 0 
+			$P 4 Gain
+				VAL 2 15
+				BLS 1 4
+			$END 0 
+			$P 4 IIP2
+				VAL 2 15
+				BLS 1 0
+			$END 0 
+			$P 4 IIP3
+				VAL 4 20.5
+				BLS 1 0
+			$END 0 
+			$P 5 IP1dB
+				VAL 4 19.5
+				BLS 1 0
+			$END 0 
+			$P 2 NF
+				VAL 3 1.6
+				BLS 1 4
+			$END 0 
+			$P 4 OIP2
+				VAL 2 30
+				BLS 1 4
+			$END 0 
+			$P 4 OIP3
+				VAL 4 35.5
+				BLS 1 4
+			$END 0 
+			$P 5 OP1dB
+				VAL 4 33.5
+				BLS 1 4
+			$END 0 
+			$P 2 Te
+				VAL 7 129.178
+				BLS 1 0
+			$END 0 
+		BCOMPRESS 1 0
+		$END 0 
+	$END 0 
+	$CMP 4 Attn
+		ILINK 2 -1
+		DESC 27 Peregrine
+AGC
+2.3V, 200uA
+		DWFLAGS 1 0
+		NFEG 1 1
+		$LIST 0 
+			$P 4 Gain
+				VAL 2 -2
+				BLS 1 4
+			$END 0 
+			$P 4 IIP2
+				VAL 2 32
+				BLS 1 0
+			$END 0 
+			$P 4 IIP3
+				VAL 2 22
+				BLS 1 0
+			$END 0 
+			$P 5 IP1dB
+				VAL 1 1
+				BLS 1 0
+			$END 0 
+			$P 2 NF
+				VAL 1 2
+				BLS 1 0
+			$END 0 
+			$P 4 OIP2
+				VAL 2 30
+				BLS 1 0
+			$END 0 
+			$P 4 OIP3
+				VAL 2 20
+				BLS 1 0
+			$END 0 
+			$P 5 OP1dB
+				VAL 2 10
+				BLS 1 0
+			$END 0 
+			$P 2 Te
+				VAL 7 169.619
+				BLS 1 0
+			$END 0 
+		BCOMPRESS 1 0
+		$END 0 
+	$END 0 
+	$CMP 4 Attn
+		ILINK 2 -1
+		DESC 9 AGC Value
+		DWFLAGS 1 0
+		NFEG 1 1
+		$LIST 0 
+			$P 4 Gain
+				VAL 1 0
+				BLS 1 4
+			$END 0 
+			$P 4 IIP2
+				VAL 2 30
+				BLS 1 0
+			$END 0 
+			$P 4 IIP3
+				VAL 2 20
+				BLS 1 0
+			$END 0 
+			$P 5 IP1dB
+				VAL 1 1
+				BLS 1 0
+			$END 0 
+			$P 2 NF
+				VAL 1 0
+				BLS 1 0
+			$END 0 
+			$P 4 OIP2
+				VAL 2 30
+				BLS 1 0
+			$END 0 
+			$P 4 OIP3
+				VAL 2 20
+				BLS 1 0
+			$END 0 
+			$P 5 OP1dB
+				VAL 2 10
+				BLS 1 0
+			$END 0 
+			$P 2 Te
+				VAL 1 0
+				BLS 1 0
+			$END 0 
+		BCOMPRESS 1 0
+		$END 0 
+	$END 0 
+	$CMP 4 Attn
+		ILINK 2 -1
+		DESC 27 Peregrine
+AGC
+2.3V, 200uA
+		DWFLAGS 1 0
+		NFEG 1 1
+		$LIST 0 
+			$P 4 Gain
+				VAL 2 -2
+				BLS 1 4
+			$END 0 
+			$P 4 IIP2
+				VAL 2 32
+				BLS 1 0
+			$END 0 
+			$P 4 IIP3
+				VAL 2 22
+				BLS 1 0
+			$END 0 
+			$P 5 IP1dB
+				VAL 1 1
+				BLS 1 0
+			$END 0 
+			$P 2 NF
+				VAL 1 2
+				BLS 1 0
+			$END 0 
+			$P 4 OIP2
+				VAL 2 30
+				BLS 1 0
+			$END 0 
+			$P 4 OIP3
+				VAL 2 20
+				BLS 1 0
+			$END 0 
+			$P 5 OP1dB
+				VAL 2 10
+				BLS 1 0
+			$END 0 
+			$P 2 Te
+				VAL 7 169.619
+				BLS 1 0
+			$END 0 
+		BCOMPRESS 1 0
+		$END 0 
+	$END 0 
+	$CMP 4 Attn
+		ILINK 2 -1
+		DESC 32 Temp, Mass 
+production 
+Comp
+		DWFLAGS 1 0
+		NFEG 1 1
+		$LIST 0 
+			$P 4 Gain
+				VAL 4 -9.5
+				BLS 1 4
+			$END 0 
+			$P 4 IIP2
+				VAL 4 39.5
+				BLS 1 0
+			$END 0 
+			$P 4 IIP3
+				VAL 4 29.5
+				BLS 1 0
+			$END 0 
+			$P 5 IP1dB
+				VAL 1 1
+				BLS 1 0
+			$END 0 
+			$P 2 NF
+				VAL 3 9.5
+				BLS 1 0
+			$END 0 
+			$P 4 OIP2
+				VAL 2 30
+				BLS 1 0
+			$END 0 
+			$P 4 OIP3
+				VAL 2 20
+				BLS 1 0
+			$END 0 
+			$P 5 OP1dB
+				VAL 2 10
+				BLS 1 0
+			$END 0 
+			$P 2 Te
+				VAL 9 2.29463e3
+				BLS 1 0
+			$END 0 
+		BCOMPRESS 1 0
+		$END 0 
+	$END 0 
+	$CMP 6 Filter
+		ILINK 2 -1
+		DESC 25 Sawnics
+SF-172501-
+S20
+		DWFLAGS 1 0
+		NFEG 1 1
+		$LIST 0 
+			$P 4 Gain
+				VAL 4 -2.5
+				BLS 1 4
+			$END 0 
+			$P 4 IIP2
+				VAL 4 32.5
+				BLS 1 0
+			$END 0 
+			$P 4 IIP3
+				VAL 4 22.5
+				BLS 1 0
+			$END 0 
+			$P 5 IP1dB
+				VAL 1 1
+				BLS 1 0
+			$END 0 
+			$P 2 NF
+				VAL 3 2.5
+				BLS 1 0
+			$END 0 
+			$P 4 OIP2
+				VAL 2 30
+				BLS 1 0
+			$END 0 
+			$P 4 OIP3
+				VAL 2 20
+				BLS 1 0
+			$END 0 
+			$P 5 OP1dB
+				VAL 2 10
+				BLS 1 0
+			$END 0 
+			$P 2 Te
+				VAL 7 225.701
+				BLS 1 0
+			$END 0 
+		BCOMPRESS 1 0
+		$END 0 
+	$END 0 
+	$CMP 4 Gain
+		ILINK 2 -1
+		DESC 22 Amp
+BNT01
+3.3V, 47mA
+		DWFLAGS 1 0
+		$LIST 0 
+			$P 4 Gain
+				VAL 2 15
+				BLS 1 4
+			$END 0 
+			$P 4 IIP2
+				VAL 2 15
+				BLS 1 0
+			$END 0 
+			$P 4 IIP3
+				VAL 4 20.5
+				BLS 1 0
+			$END 0 
+			$P 5 IP1dB
+				VAL 4 19.5
+				BLS 1 4
+			$END 0 
+			$P 2 NF
+				VAL 3 1.6
+				BLS 1 4
+			$END 0 
+			$P 4 OIP2
+				VAL 2 30
+				BLS 1 4
+			$END 0 
+			$P 4 OIP3
+				VAL 4 35.5
+				BLS 1 4
+			$END 0 
+			$P 5 OP1dB
+				VAL 4 33.5
+				BLS 1 0
+			$END 0 
+			$P 2 Te
+				VAL 7 129.178
+				BLS 1 0
+			$END 0 
+		BCOMPRESS 1 0
+		$END 0 
+	$END 0 
+	$CMP 7 Generic
+		ILINK 2 -1
+		DESC 9 Pi-PIad
+
+		DWFLAGS 1 0
+		$LIST 0 
+			$P 4 Gain
+				VAL 2 -2
+				BLS 1 4
+			$END 0 
+			$P 4 IIP2
+				VAL 2 32
+				BLS 1 0
+			$END 0 
+			$P 4 IIP3
+				VAL 1 2
+				BLS 1 0
+			$END 0 
+			$P 5 IP1dB
+				VAL 1 1
+				BLS 1 0
+			$END 0 
+			$P 2 NF
+				VAL 1 2
+				BLS 1 4
+			$END 0 
+			$P 4 OIP2
+				VAL 2 30
+				BLS 1 4
+			$END 0 
+			$P 4 OIP3
+				VAL 1 0
+				BLS 1 4
+			$END 0 
+			$P 5 OP1dB
+				VAL 2 10
+				BLS 1 0
+			$END 0 
+			$P 2 Te
+				VAL 7 169.619
+				BLS 1 0
+			$END 0 
+		BCOMPRESS 1 0
+		$END 0 
+	$END 0 
+	$CMP 4 Gain
+		ILINK 2 -1
+		DESC 22 HPA
+BMT321
+5V, 355mA
+		DWFLAGS 1 0
+		$LIST 0 
+			$P 4 Gain
+				VAL 4 27.5
+				BLS 1 4
+			$END 0 
+			$P 4 IIP2
+				VAL 3 2.5
+				BLS 1 0
+			$END 0 
+			$P 4 IIP3
+				VAL 4 22.5
+				BLS 1 0
+			$END 0 
+			$P 5 IP1dB
+				VAL 4 32.4
+				BLS 1 4
+			$END 0 
+			$P 2 NF
+				VAL 3 5.3
+				BLS 1 4
+			$END 0 
+			$P 4 OIP2
+				VAL 2 30
+				BLS 1 4
+			$END 0 
+			$P 4 OIP3
+				VAL 2 50
+				BLS 1 4
+			$END 0 
+			$P 5 OP1dB
+				VAL 4 58.9
+				BLS 1 0
+			$END 0 
+			$P 2 Te
+				VAL 7 692.648
+				BLS 1 0
+			$END 0 
+		BCOMPRESS 1 0
+		$END 0 
+	$END 0 
+	$CMP 6 Filter
+		ILINK 2 -1
+		DESC 14 Qorvo
+TQQ6103
+		DWFLAGS 1 0
+		NFEG 1 1
+		$LIST 0 
+			$P 4 Gain
+				VAL 2 -4
+				BLS 1 4
+			$END 0 
+			$P 4 IIP2
+				VAL 2 34
+				BLS 1 0
+			$END 0 
+			$P 4 IIP3
+				VAL 2 24
+				BLS 1 0
+			$END 0 
+			$P 5 IP1dB
+				VAL 1 1
+				BLS 1 0
+			$END 0 
+			$P 2 NF
+				VAL 1 4
+				BLS 1 4
+			$END 0 
+			$P 4 OIP2
+				VAL 2 30
+				BLS 1 0
+			$END 0 
+			$P 4 OIP3
+				VAL 2 20
+				BLS 1 0
+			$END 0 
+			$P 5 OP1dB
+				VAL 2 10
+				BLS 1 0
+			$END 0 
+			$P 2 Te
+				VAL 7 438.447
+				BLS 1 0
+			$END 0 
+		BCOMPRESS 1 0
+		$END 0 
+	$END 0 
+	$BREP 5 32787
+	$EREP 0 
+$END 10 1.8_LTE_UL
